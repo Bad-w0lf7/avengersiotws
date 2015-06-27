@@ -9,6 +9,17 @@
 <p>Temp : <input type="text" id="test" value="55"></p>
 <p>Temp1 : <input type="text" id="test1" value="55"></p>
 <button> Send to data.sparkfun.com </button>
+<button id="demo" onclick="myFunction()">Click me to change my text color.</button>
+
+<script>
+function myFunction() {
+  $.post("https://data.sparkfun.com/input/RMbp8YVRQ2flJ7bo4z8w?private_key=lz7nVgKx0MCnNjY7gMwB",
+{
+temp: document.getElementById("field2").value
+});
+    
+}
+</script>
 
 </body>
 </html>
